@@ -13,12 +13,15 @@
     <main>
       <div class="title">
         <h1 class="name">Mainichi</h1>
-        <h1 class="subtitle">Begin your daily Japanese learning!</h1>
+        <p class="cur-date"><span id="date-time"></span></p>
+        <h3 class="subtitle">Begin your daily Japanese learning!</h3>
       </div>
       <section class="button-input">
         <div class="left-side">
-          <input type="email" id="email" name="email-field" placeholder="Enter your email.">
-          <input type="number" id="phone" name="phone-field" placeholder="Enter your phone number.">
+          <form method="POST" action="mainichi.php">
+            <input type="email" id="email" name="email-field" placeholder="Enter your email.">
+            <input type="number" id="phone" name="phone-field" placeholder="Enter your phone number.">
+          </form>
         </div>
         <div class="right-side">
           <label class="toggle-switch">
@@ -27,8 +30,12 @@
           </label>
         </div>
       </section>
-      <div class="submit-btn"><button>Submit</button></div>
+      <div class="submit-btn">
+        <input type="submit" name="submit" id="submit" value="Submit">
+      </div>
     </main>
+
+
     <script src="index.js"></script>
   </body>
 

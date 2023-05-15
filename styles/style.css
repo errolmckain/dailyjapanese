@@ -31,7 +31,7 @@ main {
 
 .name,
 .subtitle {
-  background-image: linear-gradient(to right, cyan, #884EA0);
+  background-image: linear-gradient(to right, #884EA0, cyan);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,7 +126,7 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-.submit-btn button {
+.submit-btn input {
   padding: 4px 12px;
   border-radius: 6px;
   border: none;
@@ -135,7 +135,7 @@ input:checked+.slider:before {
   transition: 0.2s;
 }
 
-.submit-btn button:active {
+.submit-btn input:active {
   background-color: #884EA0;
   color: white;
 }

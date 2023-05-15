@@ -1,3 +1,5 @@
+// Toggle between phone number and email
+
 var phoneNumber = document.getElementById("phone");
 phoneNumber.style.display = "none";
 
@@ -13,3 +15,5 @@ function toggleTextFields() {
     phoneNumber.style.display = "block";
   }
 }
+
+
